@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+    
+    <div class="w-50 mx-auto mt-3 py-6">
+
+      
+
+        <div class="form-floating mb-3">
+            <input  type="text"  class=" myInputName form-control" id="productName" placeholder="test">
+            <label for="productName">product name</label>
+            <div id="name_error"></div>
+          </div>
+          
+
+          <div class="form-floating mb-3">
+            <input  type="number" class="form-control" id="productPrice" placeholder="test">
+            <label for="productPrice">product price</label>
+          </div>
+
+          
+          <div class=" myInputModel form-floating mb-3">
+            <input  type="text"  class="   myInputModel  form-control" id="productModel" placeholder="test">
+            <label for="productModel">product model</label>
+            <div id="model_error"></div>
+          </div>
+          
+
+          <div class="form-floating mb-3">
+            <textarea  class="form-control" id="productDescription" cols="30" rows="10" placeholder="test"></textarea>
+            <label for="productDescription">product description</label>
+          </div>
+          
+          <button id = "tChange" class="btn btn-primary" onclick="addProduct()">Add product</button>
+
+    </div>
+
+    <div class="w-50 mx-auto my-4">
+
+      <div class="mb-5 w-50 mx-auto">
+        <label for="search">Search</label>
+        <input type="text" class="form-control" id="search" placeholder="" onkeyup="searchProduct(this.value)">
+      </div>
+
+        <table class="table text-center">
+            <thead>
+                <th>index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productModel</th>
+                <th>productDescription</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="rowData">
+              
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
